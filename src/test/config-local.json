@@ -1,0 +1,17 @@
+{
+  "name": "demo101",
+  "config": {
+    "connector.class": "com.github.dariobalinzo.ElasticSourceConnector",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable":"false",
+    "errors.log.enable": "true",
+    "errors.log.include.messages": "true",
+    "es.host": "es-container",
+    "es.port": "9200",
+    "index.prefix": "pocindex",
+    "topic.prefix": "example_",
+    "fieldname_converter": "nop",
+    "incrementing.field.name": "lastUpdated"
+  }
+}
